@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — WhiteDevil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="index.html" class="login-back">← Back to site</a>
+
+<div class="login-page">
+  <div class="login-card">
+    <div class="login-logo">White<span class="devil-half">Devil</span></div>
+    <div class="login-tag">Client Access</div>
+
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn btn-primary login-submit">Login</button>
+      <p class="login-error" id="loginError"></p>
+    </form>
+
+    <p class="login-foot">Just here to browse? <a href="index.html">Continue to site</a></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
